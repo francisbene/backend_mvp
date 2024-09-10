@@ -1,54 +1,28 @@
-# Gerenciamento de Usuários - Backend com Flask
+# API Gerenciamento de Usuários - Backend Python com Flask
 
 Este projeto é uma aplicação backend de gerenciamento de usuários desenvolvida com Flask. O aplicativo permite adicionar, buscar, editar e deletar usuários utilizando uma API RESTful.
 
-## Passos para Rodar o App em Outro Computador
+## Como executar
+
+Certifique-se de que o código do projeto esteja disponível no novo computador. Você pode fazer isso clonando o repositório do GitHub ou baixando os arquivos.  
+Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal, para poder executar os comandos descritos abaixo, será necessário ter todas as libs python listadas no requirements.txt instaladas.
 
 Siga os passos abaixo para configurar e rodar o projeto em qualquer computador.
 
-### 1. Clone ou Baixe o Projeto
+Será necessário ter todas as libs python listadas no `requirements.txt` instaladas.
+Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal, para poder executar os comandos descritos abaixo.
 
-Certifique-se de que o código do projeto esteja disponível no novo computador. Você pode fazer isso clonando o repositório do GitHub ou baixando os arquivos.
+> É fortemente indicado o uso de ambientes virtuais do tipo [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html).
 
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+```
+(env)$ pip install -r requirements.txt
+```
 
-### 2. Instale Python e Pip
+Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`.
 
-Verifique se o Python e o gerenciador de pacotes pip estão instalados na máquina de destino, para isso execute os seguintes comandos:
+Para executar a API  basta executar:
 
-```bash
-python --version
-pip --version
-
-Se não estiverem instalados, baixe o Python do site oficial e siga as instruções de instalação para o seu sistema operacional.
-
-### 3. Crie um Ambiente Virtual
-
-No diretório do projeto, crie um ambiente virtual para garantir que todas as dependências do Python sejam isoladas:
-
-```bash
-python -m venv venv
-
-#### Windows: Ative o ambiente virtual com o comando:
-```bash
-venv\Scripts\activate
-
-#### Linux/MacOS: Ative o ambiente virtual com o comando:
-```bash
-source venv/bin/activate
-
-### 4. Instale as Dependências
-
-Utilize o arquivo requirements.txt para instalar todas as bibliotecas necessárias para o projeto:
-
-```bash
-pip install -r requirements.txt
-
-### 5. Execute o Servidor Flask
-
-Com todas as dependências instaladas e o ambiente configurado, você pode iniciar o servidor Flask:
-
-```bash
-flask run
+```
+(env)$ flask run
+(env)$ flask run --host 0.0.0.0 --port 5000
+```
