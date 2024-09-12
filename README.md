@@ -21,3 +21,11 @@ Para executar a API  basta executar:
 ```
 (env)$ flask run
 ```
+
+Para verificar o status da API em execução, abra no navegador endereço abaixo:
+
+http://127.0.0.1:5000/users/
+
+Para verificar a documentação da API no Swagger, abrir no navegador:
+
+http://127.0.0.1:5000/docs
